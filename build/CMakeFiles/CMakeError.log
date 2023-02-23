@@ -1,0 +1,828 @@
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_51f54 && [1/2] Building C object CMakeFiles/cmTC_51f54.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_51f54.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_51f54.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_82627 && [1/2] Building CXX object CMakeFiles/cmTC_82627.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_82627.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_82627.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_22846 && [1/2] Building C object CMakeFiles/cmTC_22846.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_22846.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_22846.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_ae9f8 && [1/2] Building CXX object CMakeFiles/cmTC_ae9f8.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_ae9f8.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_ae9f8.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_1a788 && [1/2] Building C object CMakeFiles/cmTC_1a788.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_1a788.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_1a788.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_9eac8 && [1/2] Building CXX object CMakeFiles/cmTC_9eac8.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_9eac8.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_9eac8.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_b1dff && [1/2] Building C object CMakeFiles/cmTC_b1dff.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_b1dff.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_b1dff.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_caf5c && [1/2] Building CXX object CMakeFiles/cmTC_caf5c.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_caf5c.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_caf5c.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_e4726 && [1/2] Building C object CMakeFiles/cmTC_e4726.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_e4726.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_e4726.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_72196 && [1/2] Building CXX object CMakeFiles/cmTC_72196.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_72196.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_72196.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_6a8e2 && [1/2] Building C object CMakeFiles/cmTC_6a8e2.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_6a8e2.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_6a8e2.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_4a330 && [1/2] Building CXX object CMakeFiles/cmTC_4a330.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_4a330.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_4a330.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_77145 && [1/2] Building C object CMakeFiles/cmTC_77145.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_77145.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_77145.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_10bcd && [1/2] Building CXX object CMakeFiles/cmTC_10bcd.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_10bcd.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_10bcd.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_10277 && [1/2] Building C object CMakeFiles/cmTC_10277.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_10277.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_10277.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_c1440 && [1/2] Building CXX object CMakeFiles/cmTC_c1440.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_c1440.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_c1440.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_020e9 && [1/2] Building C object CMakeFiles/cmTC_020e9.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_020e9.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_020e9.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_6a947 && [1/2] Building CXX object CMakeFiles/cmTC_6a947.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_6a947.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_6a947.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_8ea3d && [1/2] Building C object CMakeFiles/cmTC_8ea3d.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_8ea3d.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_8ea3d.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_876c6 && [1/2] Building CXX object CMakeFiles/cmTC_876c6.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_876c6.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_876c6.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_fa814 && [1/2] Building C object CMakeFiles/cmTC_fa814.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_fa814.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_fa814.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_bd47d && [1/2] Building CXX object CMakeFiles/cmTC_bd47d.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_bd47d.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_bd47d.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_fa5ce && [1/2] Building C object CMakeFiles/cmTC_fa5ce.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_fa5ce.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_fa5ce.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_5179b && [1/2] Building CXX object CMakeFiles/cmTC_5179b.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_5179b.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_5179b.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_ebb56 && [1/2] Building C object CMakeFiles/cmTC_ebb56.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_ebb56.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_ebb56.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_207d1 && [1/2] Building CXX object CMakeFiles/cmTC_207d1.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_207d1.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_207d1.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_9a42d && [1/2] Building C object CMakeFiles/cmTC_9a42d.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_9a42d.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_9a42d.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_2e3fe && [1/2] Building CXX object CMakeFiles/cmTC_2e3fe.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_2e3fe.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_2e3fe.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_78a6b && [1/2] Building C object CMakeFiles/cmTC_78a6b.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_78a6b.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_78a6b.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_6ab1e && [1/2] Building CXX object CMakeFiles/cmTC_6ab1e.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_6ab1e.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_6ab1e.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_9ac47 && [1/2] Building C object CMakeFiles/cmTC_9ac47.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_9ac47.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_9ac47.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_91036 && [1/2] Building CXX object CMakeFiles/cmTC_91036.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_91036.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_91036.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_e3573 && [1/2] Building C object CMakeFiles/cmTC_e3573.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_e3573.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_e3573.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_c4452 && [1/2] Building CXX object CMakeFiles/cmTC_c4452.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_c4452.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_c4452.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_35716 && [1/2] Building C object CMakeFiles/cmTC_35716.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_35716.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_35716.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_a02b5 && [1/2] Building CXX object CMakeFiles/cmTC_a02b5.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_a02b5.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_a02b5.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_5aca8 && [1/2] Building C object CMakeFiles/cmTC_5aca8.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_5aca8.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_5aca8.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_42102 && [1/2] Building CXX object CMakeFiles/cmTC_42102.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_42102.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_42102.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_93ec3 && [1/2] Building C object CMakeFiles/cmTC_93ec3.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_93ec3.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_93ec3.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_ba750 && [1/2] Building CXX object CMakeFiles/cmTC_ba750.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_ba750.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_ba750.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_764e5 && [1/2] Building C object CMakeFiles/cmTC_764e5.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_764e5.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_764e5.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_08469 && [1/2] Building CXX object CMakeFiles/cmTC_08469.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_08469.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_08469.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_463fb && [1/2] Building C object CMakeFiles/cmTC_463fb.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_463fb.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_463fb.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_80f1a && [1/2] Building CXX object CMakeFiles/cmTC_80f1a.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_80f1a.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_80f1a.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_883de && [1/2] Building C object CMakeFiles/cmTC_883de.dir/OpenMPTryFlag.c.obj
+FAILED: CMakeFiles/cmTC_883de.dir/OpenMPTryFlag.c.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_883de.dir/OpenMPTryFlag.c.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
+xtensa-esp32-elf-gcc.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/appus/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_4a8b4 && [1/2] Building CXX object CMakeFiles/cmTC_4a8b4.dir/OpenMPTryFlag.cpp.obj
+FAILED: CMakeFiles/cmTC_4a8b4.dir/OpenMPTryFlag.cpp.obj 
+C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe   -mlongcalls -Wno-frame-address  -fopenmp -v -o CMakeFiles/cmTC_4a8b4.dir/OpenMPTryFlag.cpp.obj -c D:/My_Files/Career/Education/University/VIT/FYP/ESPIDF/Blinky_ESP32/sample_project/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=C:\Users\appus\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
+xtensa-esp32-elf-g++.exe: error: unrecognized command-line option '-pthread'
+Target: xtensa-esp32-elf
+Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp32-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp32-elf/xtensa-esp32-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2022r1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (crosstool-NG esp-2022r1) 
+ninja: build stopped: subcommand failed.
+
+
+
