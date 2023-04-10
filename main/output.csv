@@ -1,0 +1,324 @@
+sep=;
+time;model_id;model_name;port_name;data
+0;1;blinky;;Status: 0, sigma: 0.5
+0;2;generator;;Status: 0
+0.5;1;blinky;out;0
+0.5;1;blinky;;Status: 1, sigma: 0.5
+1;1;blinky;out;1
+1;1;blinky;;Status: 0, sigma: 0.5
+1.5;1;blinky;out;0
+1.5;1;blinky;;Status: 1, sigma: 0.5
+2;1;blinky;out;1
+2;1;blinky;;Status: 0, sigma: 0.5
+2.5;1;blinky;out;0
+2.5;1;blinky;;Status: 1, sigma: 0.5
+3;1;blinky;out;1
+3;1;blinky;;Status: 0, sigma: 0.5
+3.5;1;blinky;out;0
+3.5;1;blinky;;Status: 1, sigma: 0.5
+4;1;blinky;out;1
+4;1;blinky;;Status: 0, sigma: 0.5
+4.5;1;blinky;out;0
+4.5;1;blinky;;Status: 1, sigma: 0.5
+5;1;blinky;out;1
+5;1;blinky;;Status: 0, sigma: 0.5
+5.5;1;blinky;out;0
+5.5;1;blinky;;Status: 1, sigma: 0.5
+6;1;blinky;out;1
+6;1;blinky;;Status: 0, sigma: 0.5
+6.5;1;blinky;out;0
+6.5;1;blinky;;Status: 1, sigma: 0.5
+7;1;blinky;out;1
+7;1;blinky;;Status: 0, sigma: 0.5
+7.5;1;blinky;out;0
+7.5;1;blinky;;Status: 1, sigma: 0.5
+8;1;blinky;out;1
+8;1;blinky;;Status: 0, sigma: 0.5
+8.5;1;blinky;out;0
+8.5;1;blinky;;Status: 1, sigma: 0.5
+9;1;blinky;out;1
+9;1;blinky;;Status: 0, sigma: 0.5
+9.5;1;blinky;out;0
+9.5;1;blinky;;Status: 1, sigma: 0.5
+10;1;blinky;out;1
+10;1;blinky;;Status: 0, sigma: 0.5
+10.5;1;blinky;out;0
+10.5;1;blinky;;Status: 1, sigma: 0.5
+11;1;blinky;out;1
+11;1;blinky;;Status: 0, sigma: 0.5
+11.5;1;blinky;out;0
+11.5;1;blinky;;Status: 1, sigma: 0.5
+12;1;blinky;out;1
+12;1;blinky;;Status: 0, sigma: 0.5
+12.5;1;blinky;out;0
+12.5;1;blinky;;Status: 1, sigma: 0.5
+13;1;blinky;out;1
+13;1;blinky;;Status: 0, sigma: 0.5
+13.5;1;blinky;out;0
+13.5;1;blinky;;Status: 1, sigma: 0.5
+14;1;blinky;out;1
+14;1;blinky;;Status: 0, sigma: 0.5
+14.5;1;blinky;out;0
+14.5;1;blinky;;Status: 1, sigma: 0.5
+15;1;blinky;out;1
+15;1;blinky;;Status: 0, sigma: 0.5
+15.5;1;blinky;out;0
+15.5;1;blinky;;Status: 1, sigma: 0.5
+16;1;blinky;out;1
+16;1;blinky;;Status: 0, sigma: 0.5
+16.5;1;blinky;out;0
+16.5;1;blinky;;Status: 1, sigma: 0.5
+17;1;blinky;out;1
+17;1;blinky;;Status: 0, sigma: 0.5
+17.5;1;blinky;out;0
+17.5;1;blinky;;Status: 1, sigma: 0.5
+18;1;blinky;out;1
+18;1;blinky;;Status: 0, sigma: 0.5
+18.4446;1;blinky;;Status: 0, sigma: 0.5
+18.4446;2;generator;out;0
+18.4446;2;generator;;Status: 0
+18.9446;1;blinky;out;0
+18.9446;1;blinky;;Status: 1, sigma: 0.5
+19.4446;1;blinky;out;1
+19.4446;1;blinky;;Status: 0, sigma: 0.5
+19.9446;1;blinky;out;0
+19.9446;1;blinky;;Status: 1, sigma: 0.5
+20.4446;1;blinky;out;1
+20.4446;1;blinky;;Status: 0, sigma: 0.5
+20.9446;1;blinky;out;0
+20.9446;1;blinky;;Status: 1, sigma: 0.5
+21.4446;1;blinky;out;1
+21.4446;1;blinky;;Status: 0, sigma: 0.5
+21.9446;1;blinky;out;0
+21.9446;1;blinky;;Status: 1, sigma: 0.5
+22.4446;1;blinky;out;1
+22.4446;1;blinky;;Status: 0, sigma: 0.5
+22.9446;1;blinky;out;0
+22.9446;1;blinky;;Status: 1, sigma: 0.5
+23.4446;1;blinky;out;1
+23.4446;1;blinky;;Status: 0, sigma: 0.5
+23.9446;1;blinky;out;0
+23.9446;1;blinky;;Status: 1, sigma: 0.5
+24.4446;1;blinky;out;1
+24.4446;1;blinky;;Status: 0, sigma: 0.5
+24.9446;1;blinky;out;0
+24.9446;1;blinky;;Status: 1, sigma: 0.5
+25.4446;1;blinky;out;1
+25.4446;1;blinky;;Status: 0, sigma: 0.5
+25.9446;1;blinky;out;0
+25.9446;1;blinky;;Status: 1, sigma: 0.5
+26.4446;1;blinky;out;1
+26.4446;1;blinky;;Status: 0, sigma: 0.5
+26.9446;1;blinky;out;0
+26.9446;1;blinky;;Status: 1, sigma: 0.5
+27.4446;1;blinky;out;1
+27.4446;1;blinky;;Status: 0, sigma: 0.5
+27.9446;1;blinky;out;0
+27.9446;1;blinky;;Status: 1, sigma: 0.5
+28.4446;1;blinky;out;1
+28.4446;1;blinky;;Status: 0, sigma: 0.5
+28.5947;1;blinky;;Status: 0, sigma: 1
+28.5947;2;generator;out;0
+28.5947;2;generator;;Status: 0
+29.5947;1;blinky;out;0
+29.5947;1;blinky;;Status: 1, sigma: 1
+30.5947;1;blinky;out;1
+30.5947;1;blinky;;Status: 0, sigma: 1
+31.5947;1;blinky;out;0
+31.5947;1;blinky;;Status: 1, sigma: 1
+32.5947;1;blinky;out;1
+32.5947;1;blinky;;Status: 0, sigma: 1
+33.5947;1;blinky;out;0
+33.5947;1;blinky;;Status: 1, sigma: 1
+34.5947;1;blinky;out;1
+34.5947;1;blinky;;Status: 0, sigma: 1
+35.5947;1;blinky;out;0
+35.5947;1;blinky;;Status: 1, sigma: 1
+36.5947;1;blinky;out;1
+36.5947;1;blinky;;Status: 0, sigma: 1
+37.5947;1;blinky;out;0
+37.5947;1;blinky;;Status: 1, sigma: 1
+38.5947;1;blinky;out;1
+38.5947;1;blinky;;Status: 0, sigma: 1
+39.5947;1;blinky;out;0
+39.5947;1;blinky;;Status: 1, sigma: 1
+40.5947;1;blinky;out;1
+40.5947;1;blinky;;Status: 0, sigma: 1
+41.5947;1;blinky;out;0
+41.5947;1;blinky;;Status: 1, sigma: 1
+42.5947;1;blinky;out;1
+42.5947;1;blinky;;Status: 0, sigma: 1
+43.5947;1;blinky;out;0
+43.5947;1;blinky;;Status: 1, sigma: 1
+44.5947;1;blinky;out;1
+44.5947;1;blinky;;Status: 0, sigma: 1
+45.5947;1;blinky;out;0
+45.5947;1;blinky;;Status: 1, sigma: 1
+45.7801;1;blinky;;Status: 1, sigma: 0.5
+45.7801;2;generator;out;0
+45.7801;2;generator;;Status: 0
+46.2801;1;blinky;out;1
+46.2801;1;blinky;;Status: 0, sigma: 0.5
+46.7801;1;blinky;out;0
+46.7801;1;blinky;;Status: 1, sigma: 0.5
+47.2801;1;blinky;out;1
+47.2801;1;blinky;;Status: 0, sigma: 0.5
+47.7801;1;blinky;out;0
+47.7801;1;blinky;;Status: 1, sigma: 0.5
+48.2801;1;blinky;out;1
+48.2801;1;blinky;;Status: 0, sigma: 0.5
+48.7801;1;blinky;out;0
+48.7801;1;blinky;;Status: 1, sigma: 0.5
+49.2801;1;blinky;out;1
+49.2801;1;blinky;;Status: 0, sigma: 0.5
+49.7801;1;blinky;out;0
+49.7801;1;blinky;;Status: 1, sigma: 0.5
+50.2801;1;blinky;out;1
+50.2801;1;blinky;;Status: 0, sigma: 0.5
+50.7801;1;blinky;out;0
+50.7801;1;blinky;;Status: 1, sigma: 0.5
+51.2801;1;blinky;out;1
+51.2801;1;blinky;;Status: 0, sigma: 0.5
+51.7801;1;blinky;out;0
+51.7801;1;blinky;;Status: 1, sigma: 0.5
+52.2801;1;blinky;out;1
+52.2801;1;blinky;;Status: 0, sigma: 0.5
+52.7801;1;blinky;out;0
+52.7801;1;blinky;;Status: 1, sigma: 0.5
+53.2801;1;blinky;out;1
+53.2801;1;blinky;;Status: 0, sigma: 0.5
+53.7801;1;blinky;out;0
+53.7801;1;blinky;;Status: 1, sigma: 0.5
+54.2801;1;blinky;out;1
+54.2801;1;blinky;;Status: 0, sigma: 0.5
+54.7801;1;blinky;out;0
+54.7801;1;blinky;;Status: 1, sigma: 0.5
+55.2801;1;blinky;out;1
+55.2801;1;blinky;;Status: 0, sigma: 0.5
+55.7801;1;blinky;out;0
+55.7801;1;blinky;;Status: 1, sigma: 0.5
+56.2801;1;blinky;out;1
+56.2801;1;blinky;;Status: 0, sigma: 0.5
+56.7801;1;blinky;out;0
+56.7801;1;blinky;;Status: 1, sigma: 0.5
+57.2801;1;blinky;out;1
+57.2801;1;blinky;;Status: 0, sigma: 0.5
+57.6718;1;blinky;;Status: 0, sigma: 1
+57.6718;2;generator;out;0
+57.6718;2;generator;;Status: 0
+58.6718;1;blinky;out;0
+58.6718;1;blinky;;Status: 1, sigma: 1
+59.6718;1;blinky;out;1
+59.6718;1;blinky;;Status: 0, sigma: 1
+60.6718;1;blinky;out;0
+60.6718;1;blinky;;Status: 1, sigma: 1
+61.6718;1;blinky;out;1
+61.6718;1;blinky;;Status: 0, sigma: 1
+62.6718;1;blinky;out;0
+62.6718;1;blinky;;Status: 1, sigma: 1
+63.6718;1;blinky;out;1
+63.6718;1;blinky;;Status: 0, sigma: 1
+64.6718;1;blinky;out;0
+64.6718;1;blinky;;Status: 1, sigma: 1
+65.6718;1;blinky;out;1
+65.6718;1;blinky;;Status: 0, sigma: 1
+66.6718;1;blinky;out;0
+66.6718;1;blinky;;Status: 1, sigma: 1
+67.6718;1;blinky;out;1
+67.6718;1;blinky;;Status: 0, sigma: 1
+68.6718;1;blinky;out;0
+68.6718;1;blinky;;Status: 1, sigma: 1
+69.6718;1;blinky;out;1
+69.6718;1;blinky;;Status: 0, sigma: 1
+70.6718;1;blinky;out;0
+70.6718;1;blinky;;Status: 1, sigma: 1
+71.6718;1;blinky;out;1
+71.6718;1;blinky;;Status: 0, sigma: 1
+72.6718;1;blinky;out;0
+72.6718;1;blinky;;Status: 1, sigma: 1
+73.6718;1;blinky;out;1
+73.6718;1;blinky;;Status: 0, sigma: 1
+73.8144;1;blinky;;Status: 0, sigma: 0.5
+73.8144;2;generator;out;0
+73.8144;2;generator;;Status: 0
+74.3144;1;blinky;out;0
+74.3144;1;blinky;;Status: 1, sigma: 0.5
+74.8144;1;blinky;out;1
+74.8144;1;blinky;;Status: 0, sigma: 0.5
+75.3144;1;blinky;out;0
+75.3144;1;blinky;;Status: 1, sigma: 0.5
+75.8144;1;blinky;out;1
+75.8144;1;blinky;;Status: 0, sigma: 0.5
+76.3144;1;blinky;out;0
+76.3144;1;blinky;;Status: 1, sigma: 0.5
+76.8144;1;blinky;out;1
+76.8144;1;blinky;;Status: 0, sigma: 0.5
+77.3144;1;blinky;out;0
+77.3144;1;blinky;;Status: 1, sigma: 0.5
+77.8144;1;blinky;out;1
+77.8144;1;blinky;;Status: 0, sigma: 0.5
+78.3144;1;blinky;out;0
+78.3144;1;blinky;;Status: 1, sigma: 0.5
+78.8144;1;blinky;out;1
+78.8144;1;blinky;;Status: 0, sigma: 0.5
+79.3144;1;blinky;out;0
+79.3144;1;blinky;;Status: 1, sigma: 0.5
+79.8144;1;blinky;out;1
+79.8144;1;blinky;;Status: 0, sigma: 0.5
+80.3144;1;blinky;out;0
+80.3144;1;blinky;;Status: 1, sigma: 0.5
+80.8144;1;blinky;out;1
+80.8144;1;blinky;;Status: 0, sigma: 0.5
+81.3144;1;blinky;out;0
+81.3144;1;blinky;;Status: 1, sigma: 0.5
+81.8144;1;blinky;out;1
+81.8144;1;blinky;;Status: 0, sigma: 0.5
+82.3144;1;blinky;out;0
+82.3144;1;blinky;;Status: 1, sigma: 0.5
+82.8144;1;blinky;out;1
+82.8144;1;blinky;;Status: 0, sigma: 0.5
+83.3144;1;blinky;out;0
+83.3144;1;blinky;;Status: 1, sigma: 0.5
+83.8144;1;blinky;out;1
+83.8144;1;blinky;;Status: 0, sigma: 0.5
+84.3144;1;blinky;out;0
+84.3144;1;blinky;;Status: 1, sigma: 0.5
+84.8144;1;blinky;out;1
+84.8144;1;blinky;;Status: 0, sigma: 0.5
+85.3144;1;blinky;out;0
+85.3144;1;blinky;;Status: 1, sigma: 0.5
+85.8144;1;blinky;out;1
+85.8144;1;blinky;;Status: 0, sigma: 0.5
+86.3144;1;blinky;out;0
+86.3144;1;blinky;;Status: 1, sigma: 0.5
+86.5955;1;blinky;;Status: 1, sigma: 1
+86.5955;2;generator;out;0
+86.5955;2;generator;;Status: 0
+87.5955;1;blinky;out;1
+87.5955;1;blinky;;Status: 0, sigma: 1
+88.5955;1;blinky;out;0
+88.5955;1;blinky;;Status: 1, sigma: 1
+89.5955;1;blinky;out;1
+89.5955;1;blinky;;Status: 0, sigma: 1
+90.5955;1;blinky;out;0
+90.5955;1;blinky;;Status: 1, sigma: 1
+91.5955;1;blinky;out;1
+91.5955;1;blinky;;Status: 0, sigma: 1
+92.5955;1;blinky;out;0
+92.5955;1;blinky;;Status: 1, sigma: 1
+93.5955;1;blinky;out;1
+93.5955;1;blinky;;Status: 0, sigma: 1
+94.5955;1;blinky;out;0
+94.5955;1;blinky;;Status: 1, sigma: 1
+95.5955;1;blinky;out;1
+95.5955;1;blinky;;Status: 0, sigma: 1
+96.5955;1;blinky;out;0
+96.5955;1;blinky;;Status: 1, sigma: 1
+97.5955;1;blinky;out;1
+97.5955;1;blinky;;Status: 0, sigma: 1
+98.5955;1;blinky;out;0
+98.5955;1;blinky;;Status: 1, sigma: 1
+99.5955;1;blinky;out;1
+99.5955;1;blinky;;Status: 0, sigma: 1
+99.5955;1;blinky;;Status: 0, sigma: 1
+99.5955;2;generator;;Status: 0

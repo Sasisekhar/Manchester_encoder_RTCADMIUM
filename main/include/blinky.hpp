@@ -24,7 +24,7 @@ namespace cadmium::blinkySystem {
 	 * @return output stream with sigma and lightOn already inserted.
 	 */
 	std::ostream& operator<<(std::ostream &out, const BlinkyState& state) {
-		out << "Status:, " << state.lightOn << ", sigma: " << state.sigma;
+		out << "Status: " << state.lightOn << ", sigma: " << state.sigma;
 		return out;
 	}
 #endif
@@ -46,7 +46,7 @@ namespace cadmium::blinkySystem {
 		Blinky(const std::string& id): Atomic<BlinkyState>(id, BlinkyState()) {
 			out = addOutPort<bool>("out");
 			in  = addInPort<bool>("in");
-			slowToggleTime = 3.0;  
+			slowToggleTime = 1.0;  
 			fastToggleTime = 0.5;
 			state.sigma = fastToggleTime;
 		}
@@ -97,7 +97,7 @@ namespace cadmium::blinkySystem {
 		[[nodiscard]] double timeAdvance(const BlinkyState& state) const override {
 			return state.sigma;
 		}
-	};
+		};
 }  //namespace cadmium::blinkySystem
 
 #endif //_BLINKY_HPP__

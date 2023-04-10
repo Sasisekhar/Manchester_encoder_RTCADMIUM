@@ -4,29 +4,29 @@
 #include <limits>
 #include "include/blinkySystem.hpp"
 
-// #if CONFIG_FREERTOS_UNICORE
-// 	static const BaseType_t app_cpu = 0;
-// #else
-// 	static const BaseType_t app_cpu = 2;
-// #endif
-
 using namespace cadmium::blinkySystem;
 extern "C" {
-	void app_main() {
-
+	#ifdef RT_ESP32
+		void app_main() //starting point for ESP32 code
+	#else
+		int main()		//starting point for simulation code
+	#endif
+	{
 		std::shared_ptr<blinkySystem> model = std::make_shared<blinkySystem> ("blinkySystem");
 		auto rootCoordinator = cadmium::RootCoordinator(model);
-		ESP_LOGI("APP MAIN", "Created System");
 
 		#ifndef NO_LOGGING
 			auto logger = std::make_shared<cadmium::RTLogger>(";");
 			rootCoordinator.setLogger(logger);
-			ESP_LOGI("APP_MAIN", "Logger Set");
 		#endif
 
 		rootCoordinator.start();
 	// 	rootCoordinator.simulate(std::numeric_limits<double>::infinity());
-		rootCoordinator.simulate(1000000.0);
+		rootCoordinator.simulate(100.0);
 		rootCoordinator.stop();
+
+		#ifndef RT_ESP32
+			return 0;
+		#endif
 	}
 }

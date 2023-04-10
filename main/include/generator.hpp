@@ -26,7 +26,7 @@ namespace cadmium::blinkySystem {
 		 * @return output stream with sigma already inserted.
 		 */
 		std::ostream& operator<<(std::ostream &out, const GeneratorState& state) {
-			out << "Status:, " << state.val; // state to string
+			out << "Status: " << state.val; // state to string
 			return out;
 		}
 #endif
