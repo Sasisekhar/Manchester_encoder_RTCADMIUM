@@ -117,7 +117,7 @@ namespace cadmium {
                 state.data = x;
             }
         }
-        ESP_LOGI(TAG, "Transmitted: %lld", state.data);
+        ESP_LOGI(TAG, "Transmitted: %ld", state.data);
         ESP_ERROR_CHECK(rmt_transmit(tx_channel, manchester_encoder, &state.data, sizeof(uint32_t), &tx_config));
         
       }
