@@ -1,7 +1,7 @@
 #ifndef _BLINKY_HPP__
 #define _BLINKY_HPP__
 
-#include "../../components/cadmium_v2/include/cadmium/core/modeling/atomic.hpp"
+#include <cadmium/modeling/devs/atomic.hpp>
 
 #ifndef NO_LOGGING
 	#include <iostream>
@@ -16,8 +16,8 @@ namespace cadmium::blinkySystem {
 		//! Blinky state constructor.
 		BlinkyState(): sigma(0), lightOn(false), fastToggle(false)  {}
 	};
-#ifndef NO_LOGGING
-	/**
+
+	/*
 	 * Insertion operator for BlinkyState objects. It displays the value of sigma and lightOn.
 	 * @param out output stream.
 	 * @param s state to be represented in the output stream.
@@ -27,7 +27,6 @@ namespace cadmium::blinkySystem {
 		out << "Status: " << state.lightOn << ", sigma: " << state.sigma;
 		return out;
 	}
-#endif
 
 	//! Atomic DEVS model of Blinky.
 	class Blinky : public Atomic<BlinkyState> {
@@ -96,7 +95,8 @@ namespace cadmium::blinkySystem {
 		 */
 		[[nodiscard]] double timeAdvance(const BlinkyState& state) const override {
 			return state.sigma;
-		}
+			// return 0;
+			}
 		};
 }  //namespace cadmium::blinkySystem
 

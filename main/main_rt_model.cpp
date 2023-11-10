@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include "../components/cadmium_v2/include/cadmium/core/simulation/root_coordinator.hpp"
-#include "../components/cadmium_v2/include/cadmium/core/logger/rt.hpp"
+#include <cadmium/simulation/logger/rt.hpp>
+#include <include/cadmium/simulation/rt_root_coordinator.hpp>
+#include <include/cadmium/simulation/rt_clock/chrono.hpp>
 #include <limits>
 #include "include/blinkySystem.hpp"
 
@@ -13,20 +13,18 @@ extern "C" {
 	#endif
 	{
 		std::shared_ptr<blinkySystem> model = std::make_shared<blinkySystem> ("blinkySystem");
-		auto rootCoordinator = cadmium::RootCoordinator(model);
-
-		#ifndef NO_LOGGING
-			auto logger = std::make_shared<cadmium::RTLogger>(";");
-			rootCoordinator.setLogger(logger);
-		#endif
+		cadmium::ChronoClock clock;
+		auto rootCoordinator = cadmium::RealTimeRootCoordinator<cadmium::ChronoClock<std::chrono::steady_clock>>(model, clock);
+		cadmium::Logger logger = std::make_shared<cadmium::RTLogger>(";");
+		rootCoordinator.setLogger(model, &logger);
 
 		rootCoordinator.start();
-	// 	rootCoordinator.simulate(std::numeric_limits<double>::infinity());
-		rootCoordinator.simulate(100.0);
-		rootCoordinator.stop();
+		rootCoordinator.simulate(std::numeric_limits<double>::infinity());
+		// rootCoordinator.simulate(100.0);
+		rootCoordinator.stop();	
 
 		#ifndef RT_ESP32
-			return 0;
+						return 0;
 		#endif
 	}
 }

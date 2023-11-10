@@ -4,13 +4,6 @@ all: main.o
 main.o: main_rt_model.cpp include/
 	g++ -g -c -std=c++17 -I ../components/cadmium_v2/include -I include main_rt_model.cpp -o main.o
 
-embedded:
-	cd ..
-	get_idf
-	idf.py build
-	idf.py flash
-	idf.py monitor
-
 clean:
 	rm -f *.o
 	rm -f *.csv
