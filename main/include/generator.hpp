@@ -1,7 +1,7 @@
 #ifndef _GENERATOR_HPP__
 #define _GENERATOR_HPP__
 
-#include <cadmium/core/modeling/atomic.hpp>
+#include "cadmium/modeling/devs/atomic.hpp"
 
 #ifndef NO_LOGGING
 	#include <iostream>
@@ -10,11 +10,11 @@
 
 #include <cstdlib>
 
-namespace cadmium::blinkySystem {
+namespace cadmium::topSystem {
 	//! Class for representing the Generator DEVS model state.struct GeneratorState {
 	struct GeneratorState {
 		double sigma;
-		bool val;
+		uint32_t val;
 		//! Generator state constructor.
 		GeneratorState(): sigma(0), val(0)  {}
 	};
@@ -36,20 +36,17 @@ namespace cadmium::blinkySystem {
 	 private:
 		
 	 public:
-		Port<bool> out;  
-		float a, b;
+		Port<uint32_t> out;
 
 		/**
 		 * Constructor function.
 		 * @param id ID of the new Generator model object.
 		 */
 		Generator(const std::string& id): Atomic<GeneratorState>(id, GeneratorState()) {
-			out = addOutPort<bool>("out");
-			a = 10; b = 20;
+			out = addOutPort<uint32_t>("out");
 			state.val = 0;
-			srand((unsigned) time(NULL));
-			state.sigma = a + (float)rand()/RAND_MAX * (b-a); // sigma takes random values between 1 and 20
-//			printf("[generator] init function\n");
+			srand(0);
+			state.sigma = 1;
 		}
 
 		/**
@@ -57,8 +54,7 @@ namespace cadmium::blinkySystem {
 		 * @param state reference to the current state of the model.
 		 */
 		void internalTransition(GeneratorState& state) const override {
-			state.sigma = a + (float)rand()/RAND_MAX * (b-a); // sigma takes random values between 1 and 20 
-//			printf("[generator] internal transition function\n");
+			state.val = (uint32_t)rand();
 		}
 
 		/**
@@ -69,11 +65,9 @@ namespace cadmium::blinkySystem {
 		 */
 		void externalTransition(GeneratorState& state, double e) const override {
 			state.sigma = std::numeric_limits<double>::infinity();
-//			printf("[generator] external transition function\n");
 		}
 
 		/**
-		 * It outputs a 0 value to the out port.
 		 * @param state reference to the current model state.
 		 * @param y reference to the atomic model output port set.
 		 */
