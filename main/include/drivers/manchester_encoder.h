@@ -13,14 +13,14 @@ extern "C" {
 #endif
 
 /**
- * @brief Stepper motor uniform encoder configuration
+ * @brief Manchester encoder configuration
  */
 typedef struct {
     uint32_t resolution; // Encoder resolution, in Hz
 } manchester_encoder_config_t;
 
 /**
- * @brief Create RMT encoder for encoding step motor uniform phase into RMT symbols
+ * @brief Create RMT encoder for encoding manchester symbols into RMT symbols
  *
  * @param[in] config Encoder configuration
  * @param[out] ret_encoder Returned encoder handle

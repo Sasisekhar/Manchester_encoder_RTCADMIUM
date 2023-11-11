@@ -54,8 +54,7 @@ namespace cadmium::topSystem {
 		 * @param state reference to the current state of the model.
 		 */
 		void internalTransition(GeneratorState& state) const override {
-			// state.val = (uint32_t)rand();
-			state.val = 1234;
+			state.val = (uint32_t)rand();
 		}
 
 		/**
