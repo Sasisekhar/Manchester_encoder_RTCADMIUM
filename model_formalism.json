@@ -1,0 +1,20 @@
+{
+    "Main": "/home/sasisekhar/Desktop/RA/Manchester_driver/main/main_rt_model.cpp",
+    "depth": 0,
+    "Top": [
+        {
+            "Coupled": "/home/sasisekhar/Desktop/RA/Manchester_driver/main/include/top.hpp",
+            "depth": 1,
+            "Atomics": [
+                {
+                    "Atomic": "/home/sasisekhar/Desktop/RA/Manchester_driver/main/include/ME.hpp",
+                    "depth": 2
+                },
+                {
+                    "Atomic": "/home/sasisekhar/Desktop/RA/Manchester_driver/main/include/generator.hpp",
+                    "depth": 2
+                }
+            ]
+        }
+    ]
+}

@@ -104,7 +104,7 @@ def convertToJSON(arr, depth = 0):
 			convertToJSON(item, depth + 1)
 		else:
 			if("Main" in item.keys()):
-				main_stack.append({"Main" : item["Main"].split('/')[-1], "depth" : depth, "Top" : model_stack})
+				main_stack.append({"Main" : item["Main"], "depth" : depth, "Top" : model_stack})
 			elif("Coupled" in item.keys()):
 				tmp = []
 				for atomic in model_stack:
@@ -113,9 +113,9 @@ def convertToJSON(arr, depth = 0):
 				
 				model_stack = [x for x in model_stack if x not in tmp]
 
-				model_stack.append({"Coupled" : item["Coupled"].split('/')[-1], "depth" : depth, "Atomics" : tmp})
+				model_stack.append({"Coupled" : item["Coupled"], "depth" : depth, "Atomics" : tmp})
 			elif("Atomic" in item.keys()):
-				model_stack.append({"Atomic" : item["Atomic"].split('/')[-1], "depth" : depth})
+				model_stack.append({"Atomic" : item["Atomic"], "depth" : depth})
 	
 	return main_stack
 
@@ -146,10 +146,13 @@ if __name__ == '__main__':
 
 	main_stack = convertToJSON(models)
 
-	print(" ")
-
-	print(main_stack, model_stack)
-
 	# Convert and write JSON object to file
 	with open("model_formalism.json", "w") as outfile:
 		json.dump(main_stack[0], outfile)
+	
+	# f = open("model_formalism.json")
+	# model = json.load(f)
+
+	# for models in model["Top"]:
+	# 	for atomics in models["Atomics"]:
+	# 		print(atomics)

@@ -46,7 +46,7 @@ namespace cadmium::topSystem {
 			out = addOutPort<uint32_t>("out");
 			state.val = 0;
 			srand(0);
-			state.sigma = 1;
+			state.sigma = 0.1;
 		}
 
 		/**
@@ -54,7 +54,8 @@ namespace cadmium::topSystem {
 		 * @param state reference to the current state of the model.
 		 */
 		void internalTransition(GeneratorState& state) const override {
-			state.val = (uint32_t)rand();
+			// state.val = (uint32_t)rand();
+			state.val = 0x11111111;
 		}
 
 		/**

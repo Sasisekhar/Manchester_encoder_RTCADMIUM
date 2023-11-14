@@ -5,8 +5,8 @@ setup:
 
 embedded:
 	idf.py build
-	idf.py flash
-	idf.py monitor
+	idf.py flash -p /dev/ttyACM0
+	idf.py monitor -p /dev/ttyACM0
 
 clean:
 	idf.py clean
