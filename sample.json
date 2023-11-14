@@ -1,0 +1,20 @@
+{
+    "Main": "main_rt_model.cpp",
+    "Top": [
+        {
+            "Coupled": "top.hpp",
+            "Atomics": [
+                {
+                    "Atomic": "ME.hpp",
+                    "depth": 2
+                },
+                {
+                    "Atomic": "generator.hpp",
+                    "depth": 2
+                }
+            ],
+            "depth": 1
+        }
+    ],
+    "depth": 0
+}
