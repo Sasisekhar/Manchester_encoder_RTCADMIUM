@@ -1,5 +1,6 @@
 import os, fnmatch, sys, json, re, copy
 from colorama import Fore
+from itertools import chain
 
 def find(pattern, path):
     result = []
@@ -154,12 +155,12 @@ def get_states(atomic):
 						state_name = re.search(r'struct\s+(\w+)\s*{', i.lstrip()).group(1)
 						flag = True
 					if(flag):
-						pattern = re.compile(fr'{re.escape(state_name)}\s*\(.*?\):\s*(\w+)\s*\(.*?(\w*)\s*\),\s*(\w+)\s*\(.*?(\w*)\s*\)')
+						pattern = re.compile(fr"{re.escape(state_name)}\s*\(.*?\)\s*:\s*((?:\w+\s*\(.*?\),\s*)*\w+\s*\(.*?\))\s*{{")
 						if pattern.search(i.lstrip()):
-							data = list(pattern.search(i.lstrip()).groups())
-							print(data)
+							var_and_val_group = pattern.search(i.lstrip()).group(1)
+							data = list(chain.from_iterable(re.findall(r'(\w+)\s*\(([^)]*)\)', var_and_val_group)))
 							for i in range(0, len(data) - 1, 2):
-								state_vars.update({data[i] : (data[i + 1] if data[i + 1] else "NULL")})
+								state_vars.update({data[i] : (data[i + 1].strip() if data[i + 1] else "NULL")})
 							flag = False
 					
 				except:
