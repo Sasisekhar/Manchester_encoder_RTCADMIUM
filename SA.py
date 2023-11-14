@@ -1,4 +1,4 @@
-import os, fnmatch, sys, json
+import os, fnmatch, sys, json, re, copy
 from colorama import Fore
 
 def find(pattern, path):
@@ -93,18 +93,18 @@ def printModels(arr, indent = 0):
 			print('\t' * indent, item)
 
 model_stack = []
-main_stack = []
 
-def convertToJSON(arr, depth = 0):
-	main_stack = [] 
+def convertToDictionary(arr, depth = 0):
+	main_stack = []
 	global model_stack
 
 	for item in arr:
 		if isinstance(item, list):		
-			convertToJSON(item, depth + 1)
+			convertToDictionary(item, depth + 1)
 		else:
 			if("Main" in item.keys()):
-				main_stack.append({"Main" : item["Main"], "depth" : depth, "Top" : model_stack})
+				main_stack.append({"Main" : item["Main"], "depth" : depth, "Top" : copy.deepcopy(model_stack)})
+				model_stack.clear()
 			elif("Coupled" in item.keys()):
 				tmp = []
 				for atomic in model_stack:
@@ -118,6 +118,56 @@ def convertToJSON(arr, depth = 0):
 				model_stack.append({"Atomic" : item["Atomic"], "depth" : depth})
 	
 	return main_stack
+
+def getParameters(d, target_key):
+	result = copy.deepcopy(d)
+	for key, value in d.items():
+		if key == target_key:
+			states = get_states(value)
+			result.update({"states" : states})
+		elif isinstance(value, dict):
+			result.update(getParameters(value, target_key))
+		elif isinstance(value, list):
+			listDicts = []
+			for item in value:
+				listDicts.append(getParameters(item, target_key))
+			result.update({key : listDicts})
+	return result
+
+def findWholeWord(w):
+    return re.compile(r'\b({0})\b'.format(w), flags=re.IGNORECASE).search
+
+
+def get_states(atomic):
+	flag = False
+	state_name = ""
+	state_vars = {}
+	try:
+		fp = open(atomic)
+	except PermissionError:
+		print(Fore.RED + "Not enough permissions")
+		sys.exit()
+	except Exception as e:
+		print(Fore.RED + "Error reading file:", atomic, "-", e)
+	else:
+		with fp:
+			for i in fp.readlines():
+				try:
+					if re.search(r'struct\s+(\w+)\s*{', i.lstrip()):
+						state_name = re.search(r'struct\s+(\w+)\s*{', i.lstrip()).group(1)
+						flag = True
+					if(flag):
+						pattern = re.compile(fr'{re.escape(state_name)}\(\): (\w+)\((\w+)\), (\w+)\((\w+)\)')
+						if pattern.search(i.lstrip()):
+							data = list(pattern.search(i.lstrip()).groups())
+							for i in range(0, len(data) - 1, 2):
+								state_vars.update({data[i] : data[i + 1]})
+							flag = False
+					
+				except:
+					pass
+		fp.close()
+	return state_vars
 
 if __name__ == '__main__':
 	if 'main' not in os.listdir():
@@ -140,19 +190,17 @@ if __name__ == '__main__':
 	models = getAllFiles([main_cpp[-1]])
 	print(Fore.RESET)
 
+	print("Parsed file system structure:- ")
 	printModels(models)
 
-	# print(models)
-
-	main_stack = convertToJSON(models)
+	print("Converting to Dictionary...")
+	main_stack = convertToDictionary(models)
+	
+	print("Extracting parameters...")
+	fullyFeaturedModel = getParameters(main_stack[0], 'Atomic')
 
 	# Convert and write JSON object to file
 	with open("model_formalism.json", "w") as outfile:
-		json.dump(main_stack[0], outfile)
+		json.dump(fullyFeaturedModel, outfile, indent = 2)
 	
-	# f = open("model_formalism.json")
-	# model = json.load(f)
-
-	# for models in model["Top"]:
-	# 	for atomics in models["Atomics"]:
-	# 		print(atomics)
+	print(Fore.GREEN, "JSON created successfully")
