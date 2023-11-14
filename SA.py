@@ -134,9 +134,6 @@ def getParameters(d, target_key):
 			result.update({key : listDicts})
 	return result
 
-def findWholeWord(w):
-    return re.compile(r'\b({0})\b'.format(w), flags=re.IGNORECASE).search
-
 
 def get_states(atomic):
 	flag = False
@@ -157,11 +154,12 @@ def get_states(atomic):
 						state_name = re.search(r'struct\s+(\w+)\s*{', i.lstrip()).group(1)
 						flag = True
 					if(flag):
-						pattern = re.compile(fr'{re.escape(state_name)}\(\): (\w+)\((\w+)\), (\w+)\((\w+)\)')
+						pattern = re.compile(fr'{re.escape(state_name)}\s*\(.*?\):\s*(\w+)\s*\(.*?(\w*)\s*\),\s*(\w+)\s*\(.*?(\w*)\s*\)')
 						if pattern.search(i.lstrip()):
 							data = list(pattern.search(i.lstrip()).groups())
+							print(data)
 							for i in range(0, len(data) - 1, 2):
-								state_vars.update({data[i] : data[i + 1]})
+								state_vars.update({data[i] : (data[i + 1] if data[i + 1] else "NULL")})
 							flag = False
 					
 				except:
