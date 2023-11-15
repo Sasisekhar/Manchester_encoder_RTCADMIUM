@@ -11,7 +11,8 @@
           "depth": 2,
           "states": {
             "data": "0",
-            "sigma": "0"
+            "sigma": "0",
+            "deadline": "1.0"
           }
         },
         {
@@ -19,7 +20,8 @@
           "depth": 2,
           "states": {
             "sigma": "0",
-            "val": "0"
+            "val": "0",
+            "deadline": "2.0"
           }
         }
       ]

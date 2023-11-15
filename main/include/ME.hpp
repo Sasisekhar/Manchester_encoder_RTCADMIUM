@@ -25,12 +25,13 @@ namespace cadmium {
     struct MEState {
         uint32_t data;
         double sigma;
+        double deadline;
 
         /**
          * Processor state constructor. By default, the processor is idling.
          * 
          */
-        explicit MEState(): data(0), sigma(0){
+        explicit MEState(): data(0), sigma(0.1), deadline(1.0){
         }
     };
 
@@ -95,6 +96,7 @@ namespace cadmium {
         static bool rmt_rx_done_callback(rmt_channel_handle_t channel, const rmt_rx_done_event_data_t *edata, void *user_data) {
             BaseType_t high_task_wakeup = pdFALSE;
             QueueHandle_t receive_queue = (QueueHandle_t)user_data;
+            gpio_set_level((gpio_num_t)20, true);
             // send the received RMT symbols to the parser task
             xQueueSendFromISR(receive_queue, edata, &high_task_wakeup);
             return high_task_wakeup == pdTRUE;
@@ -102,19 +104,17 @@ namespace cadmium {
 
         static uint32_t parse_data_frame(rmt_symbol_word_t *rmt_nec_symbols, size_t symbol_num) {
 
-            int ts = 18; //samppling time starts off at 18 because of start condition
+            int ts = 18;
             int c = 0;
             int i = 0;
-            bool data[36] = { false }; //32bit data + start + stop + slack
+            bool data[36] = { false };
             int dataIndex = 0;
 
-            //data parsing is done by maintaining a counter for total time elapsed (in ticks) and
-            //checking overflow with respect to the sampling time.
-            while(c < 567) { //567 ticks for the entire transmission
-
+            while(c < 567) {
                 c += rmt_nec_symbols[i].duration0;
 
                 if(c > ts) {
+                    // printf("Sampled, Duration 0, i: %d\r\n", i);
                     if(rmt_nec_symbols[i].level0 == 1)
                         data[dataIndex++] = false;
                     else
@@ -126,6 +126,8 @@ namespace cadmium {
                 c += rmt_nec_symbols[i].duration1;
 
                 if(c > ts) {
+                    
+                    
                     if(rmt_nec_symbols[i].level1 == 0)
                         data[dataIndex++] = true;
                     else
@@ -133,15 +135,18 @@ namespace cadmium {
 
                     ts += 16;
                 }
+
                 i++;
             }
 
+            // printf("0b");
             uint32_t dataDecoded = 0;
             for(int i = 32; i > 0; i--) {
+                // printf("%d", (data[i])? 1 : 0);
                 dataDecoded |= ((data[i])? 1 << (i - 1) : 0 << (i - 1));
             }
 
-            ESP_LOGI(TAG, "Recieved frame: 0x%lx", dataDecoded);
+            ESP_LOGI("parse_data_frame", "Recieved frame: 0x%lx", dataDecoded);
 
 
             return(dataDecoded);
@@ -172,7 +177,8 @@ namespace cadmium {
             config_channel_encoders();
             ESP_ERROR_CHECK(rmt_receive(rx_channel, raw_symbols, sizeof(raw_symbols), &rx_config));
 
-            state.sigma = 0.1;
+            gpio_set_direction((gpio_num_t)4, GPIO_MODE_OUTPUT);
+            gpio_set_direction((gpio_num_t)20, GPIO_MODE_OUTPUT);
 
         }
 
@@ -180,11 +186,13 @@ namespace cadmium {
         void internalTransition(MEState& state) const override {
             rmt_rx_done_event_data_t rx_data;
             if (xQueueReceive(receive_queue, &rx_data, pdMS_TO_TICKS(500)) == pdPASS) {
+
                 // parse the receive symbols and print the result
                 state.data = parse_data_frame(rx_data.received_symbols, rx_data.num_symbols);
 
                 // start receive again
                 ESP_ERROR_CHECK(rmt_receive(rx_channel, raw_symbols, sizeof(raw_symbols), &rx_config));
+                gpio_set_level((gpio_num_t)20, false);
             }
         }
 
@@ -195,8 +203,13 @@ namespace cadmium {
                     state.data = x;
                 }
             }
-            ESP_LOGI(TAG, "Transmitted: %ld", state.data);
+
+            ESP_LOGI(TAG, "Transmitted: 0x%lx", state.data);
             ESP_ERROR_CHECK(rmt_transmit(tx_channel, manchester_encoder, &state.data, sizeof(uint32_t), &tx_config));
+
+            gpio_set_level((gpio_num_t)4, true);
+            rmt_transmit(tx_channel, manchester_encoder, &state.data, sizeof(uint32_t), &tx_config);
+            gpio_set_level((gpio_num_t)4, false);
             
         }
         

@@ -15,8 +15,9 @@ namespace cadmium::topSystem {
 	struct GeneratorState {
 		double sigma;
 		uint32_t val;
+		float deadline;
 		//! Generator state constructor.
-		GeneratorState(): sigma(0), val(0)  {}
+		GeneratorState(): sigma(0), val(0), deadline(2.0)  {}
 	};
 #ifndef NO_LOGGING
 		/**
@@ -54,8 +55,8 @@ namespace cadmium::topSystem {
 		 * @param state reference to the current state of the model.
 		 */
 		void internalTransition(GeneratorState& state) const override {
-			// state.val = (uint32_t)rand();
-			state.val = 0x11111111;
+			state.val = (uint32_t)rand();
+			// state.val = 0x11111111;
 		}
 
 		/**
