@@ -13,11 +13,11 @@
 namespace cadmium::topSystem {
 	//! Class for representing the Generator DEVS model state.struct GeneratorState {
 	struct GeneratorState {
-		double sigma;
 		uint32_t val;
+		double sigma;
 		float deadline;
 		//! Generator state constructor.
-		GeneratorState(): sigma(0), val(0), deadline(2.0)  {}
+		GeneratorState(): val(0), sigma(1.2),  deadline(2.0)  {}
 	};
 #ifndef NO_LOGGING
 		/**
@@ -47,7 +47,6 @@ namespace cadmium::topSystem {
 			out = addOutPort<uint32_t>("out");
 			state.val = 0;
 			srand(0);
-			state.sigma = 0.1;
 		}
 
 		/**

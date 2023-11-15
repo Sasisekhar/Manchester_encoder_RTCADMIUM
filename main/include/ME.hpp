@@ -23,7 +23,8 @@ namespace cadmium {
     QueueHandle_t receive_queue;
 
     struct MEState {
-        uint32_t data;
+        uint32_t inData;
+        uint32_t outData;
         double sigma;
         double deadline;
 
@@ -31,12 +32,12 @@ namespace cadmium {
          * Processor state constructor. By default, the processor is idling.
          * 
          */
-        explicit MEState(): data(0), sigma(0.1), deadline(1.0){
+        explicit MEState(): inData(0), outData(0), sigma(1), deadline(1.0){
         }
     };
 
     std::ostream& operator<<(std::ostream &out, const MEState& state) {
-        out << "data: " << state.data;
+        out << "data: {" << state.inData << ", " << state.outData << "}";
         return out;
     }
 
@@ -96,7 +97,6 @@ namespace cadmium {
         static bool rmt_rx_done_callback(rmt_channel_handle_t channel, const rmt_rx_done_event_data_t *edata, void *user_data) {
             BaseType_t high_task_wakeup = pdFALSE;
             QueueHandle_t receive_queue = (QueueHandle_t)user_data;
-            gpio_set_level((gpio_num_t)20, true);
             // send the received RMT symbols to the parser task
             xQueueSendFromISR(receive_queue, edata, &high_task_wakeup);
             return high_task_wakeup == pdTRUE;
@@ -176,10 +176,6 @@ namespace cadmium {
             tx_config.loop_count = 0;
             config_channel_encoders();
             ESP_ERROR_CHECK(rmt_receive(rx_channel, raw_symbols, sizeof(raw_symbols), &rx_config));
-
-            gpio_set_direction((gpio_num_t)4, GPIO_MODE_OUTPUT);
-            gpio_set_direction((gpio_num_t)20, GPIO_MODE_OUTPUT);
-
         }
 
         // internal transition
@@ -188,11 +184,10 @@ namespace cadmium {
             if (xQueueReceive(receive_queue, &rx_data, pdMS_TO_TICKS(500)) == pdPASS) {
 
                 // parse the receive symbols and print the result
-                state.data = parse_data_frame(rx_data.received_symbols, rx_data.num_symbols);
+                state.inData = parse_data_frame(rx_data.received_symbols, rx_data.num_symbols);
 
                 // start receive again
                 ESP_ERROR_CHECK(rmt_receive(rx_channel, raw_symbols, sizeof(raw_symbols), &rx_config));
-                gpio_set_level((gpio_num_t)20, false);
             }
         }
 
@@ -200,23 +195,19 @@ namespace cadmium {
         void externalTransition(MEState& state, double e) const override {
             if(!in->empty()){
                 for( const auto x : in->getBag()){
-                    state.data = x;
+                    state.outData = x;
                 }
             }
 
-            ESP_LOGI(TAG, "Transmitted: 0x%lx", state.data);
-            ESP_ERROR_CHECK(rmt_transmit(tx_channel, manchester_encoder, &state.data, sizeof(uint32_t), &tx_config));
-
-            gpio_set_level((gpio_num_t)4, true);
-            rmt_transmit(tx_channel, manchester_encoder, &state.data, sizeof(uint32_t), &tx_config);
-            gpio_set_level((gpio_num_t)4, false);
+            ESP_LOGI(TAG, "Transmitted: 0x%lx", state.outData);
+            ESP_ERROR_CHECK(rmt_transmit(tx_channel, manchester_encoder, &state.outData, sizeof(uint32_t), &tx_config));
             
         }
         
         
         // output function
         void output(const MEState& state) const override {
-            out->addMessage(state.data);
+            out->addMessage(state.inData);
         }
 
         // time_advance function
